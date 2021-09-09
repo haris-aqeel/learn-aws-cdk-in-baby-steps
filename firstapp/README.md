@@ -7,10 +7,10 @@ For more detailed understanding proceed to https://docs.aws.amazon.com/cdk/api/v
 <h1>BASIC LAMBDA STRUCTURE:</h2><br/><br/>
 
 const Fn = new lambda.Function(this, 'MyFunction', { <br/>
-&nbsp &nbsp &nbsp runtime: lambda.Runtime.NODEJS_12_X,<br/>
-&nbsp &nbsp &nbsp handler: 'hello.handler',<br/>
-&nbsp &nbsp &nbsp timeout: Duration.minutes(1),<br/>
-&nbsp &nbsp &nbsp code: lambda.Code.fromAsset("lambda") <br/>
+	 runtime: lambda.Runtime.NODEJS_12_X,<br/>
+	 handler: 'hello.handler',<br/>
+	 timeout: Duration.minutes(1),<br/>
+	 code: lambda.Code.fromAsset("lambda") <br/>
 });<br/><br/><br/>
 
 1. Runtime includes the version of NodeJS onwhich it will run <br/>
