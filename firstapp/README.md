@@ -4,14 +4,14 @@ In this step, we will start learning the first and the main service (LAMBDA) whi
 
 For more detailed understanding proceed to https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_lambda-readme.html
 
-BASIC LAMBDA STRUCTURE:
+<h1>BASIC LAMBDA STRUCTURE:</h2><br/><br/>
 
-new lambda.Function(this, 'MyFunction', {
-      runtime: lambda.Runtime.NODEJS_12_X,
-      handler: 'hello.handler',
-      timeout: Duration.minutes(1),
-      code: lambda.Code.fromAsset("lambda"),
-});
+new lambda.Function(this, 'MyFunction', { <br/>
+      runtime: lambda.Runtime.NODEJS_12_X,<br/>
+      handler: 'hello.handler',<br/>
+      timeout: Duration.minutes(1),<br/>
+      code: lambda.Code.fromAsset("lambda") <br/>
+});<br/><br/><br/>
 
 1. Runtime includes the version of NodeJS onwhich it will run <br/>
 2. Handler is the name of lambda Function <br/>
