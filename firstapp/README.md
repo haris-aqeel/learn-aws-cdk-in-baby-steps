@@ -24,3 +24,16 @@ const Fn = new lambda.Function(this, 'MyFunction', { <br/>
 
 
 
+exports.handlerName = function(event, context, callback) {
+...
+// callback parameter is optional
+}
+
+
+	<h5> What is Event </h5>
+
+	<p>When your Lambda function is invoked in one of the supported languages, one of the parameters provided to your handler function is an event object. The event differs in structure and contents, depending on which event source created it. The contents of the event parameter include all of the data and metadata your Lambda function needs to drive its logic. For example, an event created by API Gateway will contain details related to the HTTPS request that was made by the API client (for example, path, query string, request body), whereas an event created by Amazon S3 when a new object is created will include details about the bucket and the new object.</p>
+
+<h5> What is Context </h5>
+
+	<p>Your Lambda function is also provided with a context object. The context object allows your function code to interact with the Lambda execution environment. The contents and structure of the context object vary, based on the language runtime your Lambda function is using</p>
